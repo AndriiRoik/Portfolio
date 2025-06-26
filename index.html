@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Webseite</title>
+    
+    <!-- Link zu CSS -->
+    <link rel="stylesheet" href="./styles/style.css">
+    
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header>
+            <a href="#" class="logo">andriidev</a>
+            <div id="fullmenu">
+            <div class="bx bx-menu" id="menu-icon"></div>
+            <div id="overlay">
+                <li><a href="#home">Startseite</a></li>
+                <li><a href="#about">Über mich</a></li>
+                <li><a href="#services">Projekte</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </div>
+
+            <ul class="navbar" id="navbar">   
+                <li><a href="#home">Startseite</a></li>
+                <li><a href="#about">Über mich</a></li>
+                <li><a href="#services">Projekte</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="social">
+            <a href="#" onclick="location.href='https://github.com/AndriiRoik'" class="footer__icon footer__icon1"><i class='bx bxl-github' ></i></a>
+            <a href="#" onclick="location.href='mailto:roik.andri@gmail.com'" class="footer__icon footer__icon2"><i class='bx bxl-gmail' ></i></a>
+        </div>
+        <div class="home-img">
+            <svg class="blob" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                <defs>
+                    <!-- Definiere ein Muster mit dem Bild -->
+                    <pattern id="img-pattern" x="0" y="0" patternUnits="userSpaceOnUse" width="100%" height="100%">
+                        <image class="image_blob" xlink:href="./img/main-image1.png"/>
+                    </pattern>
+                </defs>
+                <path fill="url(#img-pattern)" fill="#d1d8e0" fill="url(#img-pattern)" stroke-width="3px" stroke="#d1d8e0">
+                    <animate attributeName="d" dur="17550ms" repeatCount="indefinite" values="M434,321Q419,392,350.5,410.5Q282,429,204.5,446.5Q127,464,95.5,391Q64,318,64,250Q64,182,100,117.5Q136,53,214.5,30.5Q293,8,349,64Q405,120,427,185Q449,250,434,321Z;
+        
+                    M436,315.5Q406,381,346.5,420Q287,459,219.5,439.5Q152,420,87.5,376.5Q23,333,39.5,256Q56,179,95,114.5Q134,50,207.5,61.5Q281,73,357,84.5Q433,96,449.5,173Q466,250,436,315.5Z;
+                    
+                    M426.5,323.5Q425,397,358.5,444Q292,491,221.5,456Q151,421,103,371Q55,321,37.5,243.5Q20,166,79.5,111.5Q139,57,213.5,45Q288,33,349.5,74Q411,115,419.5,182.5Q428,250,426.5,323.5Z;
+                    
+                    M414.5,309.5Q391,369,336,397Q281,425,209,435.5Q137,446,78.5,390Q20,334,35.5,256Q51,178,98.5,124Q146,70,216.5,55.5Q287,41,359,69.5Q431,98,434.5,174Q438,250,414.5,309.5Z;
+                    
+                    M434,321Q419,392,350.5,410.5Q282,429,204.5,446.5Q127,464,95.5,391Q64,318,64,250Q64,182,100,117.5Q136,53,214.5,30.5Q293,8,349,64Q405,120,427,185Q449,250,434,321Z"
+                    ></animate>
+                </path>
+            </svg>
+        </div>   
+        <div class="home-text">
+            <h1>Andrii Roik</h1>
+            <p class="home_about">In meiner Freizeit arbeite ich gerne an Projekten, bei denen ich komplexe Aufgaben Schritt für Schritt lösen und praktische Lösungen entwickeln kann.</p>
+            <a href="./img/Lebenslauf_Informatik_DualesStudium_AndriiRoik.pdf" download class="btn">Lebenslauf herunterladen</a>
+        </div>   
+    </section>
+
+    <!-- About -->
+    <section class="about_section " id="about">
+        <div class="about__container bd-grid">
+            <div class="about__img">
+                <img src="./img/main-image2.jpg" alt="">
+            </div>
+            <div class="about__text">
+                <h2 class="section-title">ÜBER MICH</h2>
+                <h2 class="frontend-developer">Andrii Roik</h2>
+                <div class="description_frontend">Hallo! 👋 Ich bin Andrii, in meiner Freizeit beschäftige ich mich gerne mit verschiedenen Projekten, bei denen ich komplexe Aufgaben systematisch angehe und kreative, praktische Lösungen entwickle.
+                Es macht mir Spaß, Herausforderungen zu meistern und dabei stetig dazuzulernen.</div>           
+            </div>                                   
+        </div>
+    </section>
+
+        <!-- Services -->
+    <section class="services" id="services">
+        <div class="heading">
+            <h2 class="services_h">PROJEKTE</h2>
+        </div>
+        <section class="info-block">
+                        <div class="info-text">
+                            <h2>Quiz-Webseite</h2>
+                            <p class="beschreibung">Eine interaktive Quiz-Webseite, auf der Nutzer ihr Wissen in verschiedenen Kategorien testen und spielerisch Neues lernen können.</p>
+                            <button onclick="location.href='https://andriiroik.github.io/Quiz/'" class="btn" data-category="geografie">Quiz Ansehen</button>
+                        </div>
+                        <img onclick="location.href='https://andriiroik.github.io/Quiz/'" class="Quiz-Webseite" src="./img/Screenshot 2025-06-22 145212.png" alt="">
+                        
+
+                    </section>
+    </section>
+        
+
+<!-- Contact -->
+<section class="contact_section" id="contact">
+    <div class="contact_all1">
+        <div class="contact_all2">
+            <div class="contact-intro">
+                <h2 class="contact_h">KONTAKT</h2>
+                <p class="contact-description">
+                    Los geht's! Schreib mir!👇
+                </p>
+            </div>
+
+            <form class="contact-form" method="POST" action="https://api.web3forms.com/submit">
+                <input type="hidden" name="access_key" value="f095bd54-292e-4de0-9dee-d9810eafc388" />
+                <input type="hidden" name="subject" value="Neue Kontaktformular-Anfrage von meiner Webseite" />
+                <input type="hidden" name="from_name" value="Meine Webseite" />
+
+                <div class="form-group-container">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input id="name" name="name" class="form-input" placeholder="Dein Name" type="text" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">E-Mail</label>
+                        <input id="email" name="email" class="form-input" placeholder="Deine E-Mail" type="email" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Nachricht</label>
+                        <textarea class="form-textarea" id="message" name="message" placeholder="Deine Nachricht" required></textarea>
+                    </div>
+                </div>
+                <button class="form-submit" type="submit">Nachricht senden</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="content_footer1">
+            <div class="content_footer2">
+                <div class="footer__social">
+                    <a onclick="location.href='https://github.com/AndriiRoik'" class="footer__icon footer__icon1"><i class='bx bxl-github' ></i></a>
+                    <a onclick="location.href='mailto:roik.andri@gmail.com'"class="footer__icon footer__icon2"><i class='bx bxl-gmail' ></i></a>
+                </div>
+                <p class="footer__copy">roik.andri@gmail.com</p>
+            </div>
+        </div>
+    </footer>
+
+<script>// Sticky Navbar
+let header = document.querySelector('header');
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+
+window.addEventListener('scroll', () => {
+    header.classList.toggle('shadow', window.scrollY > 0);
+});
+ 
+menu.onclick = () => {
+    navbar.classList.toggle('active');
+}
+window.onscroll = () => {
+    navbar.classList.remove('active');
+}
+
+
+
+
+
+
+
+
+
+
+const menuIcon = document.getElementById('menu-icon');
+const overlay = document.getElementById('overlay');
+
+menuIcon.addEventListener('click', () => {
+  if (overlay.classList.contains('active')) {
+    overlay.classList.remove('active');
+    menuIcon.classList.replace('bx-x', 'bx-menu');
+  } else {
+    overlay.classList.add('active');
+    menuIcon.classList.replace('bx-menu', 'bx-x');
+  }
+});
+
+document.querySelectorAll('#overlay a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('overlay').classList.remove('active');
+  });
+});
+
+
+  overlay.addEventListener("click", () => {
+    menuIcon.classList.toggle("bx-menu");
+    menuIcon.classList.toggle("bx-x");
+  });
+</script>
+
+</body>
+</html>
